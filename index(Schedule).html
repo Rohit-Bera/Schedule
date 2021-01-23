@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    
+    <style>
+        body {
+            background: #833ab4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            flex-wrap: wrap;
+            font-family: 'Baloo 2', cursive;
+
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .first {
+            border: 10px solid whitesmoke;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .first p {
+            font-size: 50px;
+        }
+
+        .first #input {
+            height: 2rem;
+            width: 40rem;
+        }
+
+        .first #subbutton {
+            height: 40px;
+            width: 100px;
+            margin-top: 25px;
+            background-color: gold;
+            color: brown;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .first #subbutton:hover {
+            background-color: #fd1d1d;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .second {
+            margin-left: 50px;
+            color: black;
+            font-size: 30px;
+        }
+
+        .second #list {
+            font-size: 20px;
+            
+        }
+         .second #list .list-div{
+            margin: 20px;
+            background-color: azure;
+            border: 5px solid maroon;
+            display: flex;
+            transition: all 0.5s ease;
+            width: 35rem;
+        }
+        .second #list .list-div .list-item{
+            height: 2rem;
+            width: 25rem;
+            padding-top: 7px;
+            margin-right: 30px;
+            margin-left: 10px;
+        }
+        
+        .fa-check , .fa-times{
+            pointer-events: none;
+            font-size: 20px;
+        }
+
+        .list-tick{
+            background-color: rgb(3, 214, 3);
+            color: red;
+            margin: 10px;
+        }
+        .list-cross{
+            background-color: red;
+            color: white;
+            margin: 10px;
+        }
+
+        .done{
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+        .anime{
+            transform: translatey(8rem) rotatez(20deg);
+            opacity: 0;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <form>
+                <p class="">ScHedulE</p>
+                <input id="input" type="text" placeholder="write list item..."><br>
+                <input id="subbutton" type="button" value="List-in">
+            </form>
+        </div>
+        <div class="second">
+            <ul type="none" id="list">
+                <div class="list-div ">
+                    <li class="list-item">wake up</li>
+                    <button class="list-tick">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="list-cross">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="list-div done">
+                    <li class="list-item">Do coding</li>
+                    <button class="list-tick">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="list-cross">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="list-div">
+                    <li class="list-item">Play PUBG</li>
+                    <button class="list-tick">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="list-cross">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="list-div done">
+                    <li class="list-item">watch Anime</li>
+                    <button class="list-tick">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="list-cross">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <script src="javascript(Schedule).js"></script>
+    
+</body>
+
+</html>
